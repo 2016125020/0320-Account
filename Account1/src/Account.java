@@ -1,8 +1,6 @@
 public class Account {
-	private double balance;
-	Account(double balance){
-	
-	}
+	protected double balance;
+
 	public void credit(double a){
 		balance = balance+a;
 	}

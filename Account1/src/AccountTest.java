@@ -3,8 +3,8 @@ public class AccountTest{
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 		
-		Account account1 = new checkingAccount(1000,0.01,0.07);
-		Account account2 = new checkingAccount(1000,0.01,0.07);
+		Account account1 = new checkingAccount(1000,1.01,1.07);
+		Account account2 = new checkingAccount(1000,1.01,1.07);
 		
 		account1.setBalance(100);
 		account2.setBalance(100);
