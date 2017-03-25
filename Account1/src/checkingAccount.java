@@ -1,4 +1,3 @@
-
 public class checkingAccount extends Account {
 	private double credit_limit;
 	private double interest;
@@ -9,24 +8,26 @@ public class checkingAccount extends Account {
 		interest = b;
 		loan_interest = c;
 	}
-	 
+	
 	@Override
 	public void debit(double a){
-		if(a > credit_limit){
-			System.out.printf("Over credit limit!\n");
+		if(a>credit_limit){
+			System.out.print("Over credit limit!\n");
 		}else{
-			balance = balance - a;
+			balance = balance-a;
 			if(balance < 0){
-				System.out.printf("minus!\n");
+				System.out.print("You have minus balance!\n");
 			}
 		}
 	}
 	
-	public void nextMonth(){
+	public double nextMonth(){
 		if(balance < 0){
-			balance = balance - balance*loan_interest;
+			balance = balance + balance * loan_interest;
 		}else{
-			balance = balance + balance*interest;
+			balance = balance + balance * interest;
 		}
+		
+		return balance;
 	}
 }
