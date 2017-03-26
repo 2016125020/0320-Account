@@ -2,8 +2,8 @@ public class checkingAccount extends Account {
 	private double credit_limit;
 	private double interest;
 	private double loan_interest;
-	
-	checkingAccount(double a, double b, double c){
+
+	public checkingAccount(double a, double b, double c){
 		credit_limit = a;
 		interest = b;
 		loan_interest = c;

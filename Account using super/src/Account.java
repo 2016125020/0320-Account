@@ -1,6 +1,10 @@
 public class Account {
-	protected double balance;
-
+	private double balance;
+	
+	public Account(double a){
+		balance = a;
+	}
+	
 	public void credit(double a){ //deposit money
 		balance = balance + a;
 	}
